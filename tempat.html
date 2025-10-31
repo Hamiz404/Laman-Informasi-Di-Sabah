@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempat Menarik | Sabah Tourism</title>
+    <style>
+        /* KOD CSS UNTUK SEMUA HALAMAN - GAYA EKO-MODEN (SALIN DARI index.html) */
+        body {
+            font-family: 'Verdana', 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8f6; 
+            color: #333;
+        }
+
+        .header {
+            background-color: #1a7565; 
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            letter-spacing: 3px;
+            font-weight: 700;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-menu {
+            margin-top: 10px;
+        }
+
+        .nav-menu a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s, transform 0.2s;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .nav-menu a:hover {
+            background-color: #3d9970;
+            transform: scale(1.05);
+        }
+
+        .content {
+            padding: 120px 30px 50px 30px; 
+            max-width: 1300px;
+            margin: auto;
+            background-color: white;
+            min-height: 80vh;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #004d40; 
+            border-bottom: 3px solid #b2dfdb; 
+            padding-bottom: 10px;
+            margin-top: 30px;
+            font-size: 28px;
+        }
+
+        .footer {
+            background-color: #004d40; 
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .info-card {
+            background-color: #e0f2f1; 
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+        }
+        .info-card:hover {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin: 15px 0;
+            display: block;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+        
+        /* Stail khusus untuk tempat menarik (menggunakan Flexbox dalam info-card) */
+        .attraction-detail {
+            display: flex;
+            align-items: flex-start; 
+            margin-bottom: 20px;
+            flex-wrap: wrap; 
+        }
+
+        .attraction-text {
+            flex: 1;
+            padding-right: 20px;
+            min-width: 300px; 
+        }
+
+        .attraction-image {
+            width: 100%;
+            max-width: 400px; /* Saiz maksimum imej */
+            margin-top: 10px;
+        }
+        
+        .attraction-image img {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .attraction-detail {
+                flex-direction: column;
+            }
+            .attraction-text {
+                padding-right: 0;
+            }
+            .attraction-image {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>LAMAN INFORMASI DI SABAH</h1>
+        <div class="nav-menu">
+            <a href="index.html">LAMAN UTAMA</a>
+            <a href="tempat.html">TEMPAT MENARIK</a>
+            <a href="peta.html">PETA LOKASI</a>
+            <a href="sumber.html">SUMBER RUJUKAN</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>Destinasi Alam Semula Jadi di Sabah</h2>
+
+        <div class="info-card">
+    <h3>&#9968; Gunung Kinabalu (4,095m)</h3>
+    
+    <div class="attraction-text">
+        <p>Gunung Kinabalu, puncak tertinggi di Malaysia, adalah Tapak Warisan Dunia UNESCO. Ia terkenal dengan kekayaan flora dan fauna endemik. Taman Kinabalu menawarkan pengalaman pendakian yang mencabar dan pemandangan Banjaran Crocker yang menakjubkan.</p>
+        <p><strong>Lokasi:</strong> Ranau / Kota Belud. Ketinggian: 4,095.2 m.</p>
+    </div>
+
+    <div class="attraction-image" style="max-width: 400px; margin-top: 15px;">
+        <img src="kinabalu.jpg" alt="Imej Gunung Kinabalu" style="width: 100%; height: auto; border-radius: 8px;">
+    </div>
+    
+    <hr style="border: 0; border-top: 1px solid #ccc; margin: 20px 0;">
+
+    <p>Tonton video pendakian di sini:</p>
+    <div style="width: 100%; margin-top: 10px;"> 
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 8px;" 
+                src="https://www.youtube.com/embed/wa252LX7R8M" 
+                frameborder="0" allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+    
+</div>
+
+        <div class="info-card">
+    <h3>&#127754; Taman Laut Tunku Abdul Rahman</h3>
+    
+    <div class="attraction-text">
+        <p>Taman laut ini terdiri daripada lima pulau berhampiran Kota Kinabalu: Gaya, Sapi, Manukan, Mamutik dan Sulug. Destinasi ini sangat popular untuk aktiviti snorkeling, menyelam, dan rekreasi pantai. Air jernih dan terumbu karang yang pelbagai menjadikannya syurga marin.</p>
+        <p><strong>Aktiviti:</strong> Snorkeling, Menyelam, BBQ Pantai.</p>
+    </div>
+
+    <div class="attraction-image" style="max-width: 400px; margin-top: 15px;">
+        <img src="manukan.jpg" alt="Imej Pulau Manukan" style="width: 100%; height: auto; border-radius: 8px;">
+    </div>
+    
+    <hr style="border: 0; border-top: 1px solid #ccc; margin: 20px 0;">
+
+    <p>Tonton keindahan marin taman laut ini:</p>
+    <div style="width: 100%; margin-top: 10px;"> 
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 8px;" 
+                src="https://www.youtube.com/embed/0HcfCUgyJ3Q" 
+                frameborder="0" allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</div>
+
+        <div class="info-card">
+            <h3>&#127964; Pulau Semporna</h3>
+
+            <div class="attraction-text">
+        <p>Semporna ialah gugusan pulau yang terletak di timur Sabah, Malaysia, terkenal dengan keindahan semula jadi yang menakjubkan, lautan biru jernih, dan kepelbagaian hidupan marin</p>
+        <p><strong>Tarikan:</strong> Pulau Mabul, Pulau Sibuan, Timba-Timba</p>
+    </div>
+
+    <div class="attraction-image" style="max-width: 400px; margin-top: 15px;">
+        <img src="semporna.jpg" alt="Imej Pulau Semporna" style="width: 100%; height: auto; border-radius: 8px;">
+    </div>
+    
+    <hr style="border: 0; border-top: 1px solid #ccc; margin: 20px 0;">
+
+    <p>Tonton keindahan marin taman laut ini:</p>
+    <div style="width: 100%; margin-top: 10px;"> 
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 8px;" 
+                src="https://www.youtube.com/embed/NfC3VHjPPAI" 
+                frameborder="0" allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</div>
+
+    <footer>
+    <p>© Laman Informasi Sabah | [HAMIZ] 
+        <img src="hamiz.jpg" alt="Foto Profil Hamiz" style="width: 1.2em; height: 1.2em; border-radius: 50%; vertical-align: middle; margin-left: 5px;">
+    </p>
+</footer>
+
+</body>
+</html>
