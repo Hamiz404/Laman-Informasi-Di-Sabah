@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peta Lokasi | Sabah Tourism</title>
+    <style>
+        body {
+            font-family: 'Verdana', 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8f6; 
+            color: #333;
+        }
+
+        .header {
+            background-color: #1a7565; 
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            letter-spacing: 3px;
+            font-weight: 700;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-menu {
+            margin-top: 10px;
+        }
+
+        .nav-menu a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s, transform 0.2s;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .nav-menu a:hover {
+            background-color: #3d9970;
+            transform: scale(1.05);
+        }
+
+        .content {
+            padding: 120px 30px 50px 30px; 
+            max-width: 1300px;
+            margin: auto;
+            background-color: white;
+            min-height: 80vh;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #004d40; 
+            border-bottom: 3px solid #b2dfdb; 
+            padding-bottom: 10px;
+            margin-top: 30px;
+            font-size: 28px;
+        }
+
+        .footer {
+            background-color: #004d40; 
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .info-card {
+            background-color: #e0f2f1; 
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+        }
+        .info-card:hover {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Stail khusus peta */
+        .map-container {
+            border: 4px solid #1a7565; /* Bingkai Hijau Hutan */
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <br>
+        <h1>LAMAN INFORMASI DI SABAH</h1>
+        <div class="nav-menu">
+            <a href="index.html">LAMAN UTAMA</a>
+            <a href="tempat.html">TEMPAT MENARIK</a>
+            <a href="peta.html">PETA LOKASI</a>
+            <a href="sumber.html">SUMBER RUJUKAN</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>Lokasi Destinasi Utama Sabah</h2>
+        <div class="info-card">
+            <p>Gunakan peta di bawah untuk melihat lokasi.</p>
+
+            <div class="info-card" style="margin-top: 20px;">
+    <h3>Lokasi Utama Kota Kinabalu</h3>
+    
+    <div style="position: relative; padding-bottom: 75%; height: 0; overflow: hidden; max-width: 100%;">
+        
+        <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 8px;" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15951.353723380892!2d116.06915635!3d5.9818825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x323b69e0618b7623%3A0x6b45a0044b1c7c59!2sKota%20Kinabalu%2C%20Sabah!5e0!3m2!1sen!2smy!4v1700000000000!5m2!1sen!2smy" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        
+    </div>
+</div>
+        
+        <div class="info-card">
+            <h3>Tips Penggunaan Peta</h3>
+            <ul>
+                <li>Klik pada marker lokasi untuk melihat nama tempat.</li>
+                <li>Zum masuk/keluar untuk pandangan yang lebih terperinci.</li>
+                <li>Peta ini memfokuskan kepada lokasi utama eko-pelancongan.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer class="bg-gray-800 text-white py-4 mt-8">
+    <div class="container mx-auto text-center px-4">
+        
+        <p class="text-sm">LAMAN INFORMASI DI SABAH</p>
+
+        <div class="flex justify-center items-center text-xs mt-1">
+            
+            <p>Hak Cipta Terpelihara &copy; Hamiz 2025</p>
+            
+            <img src="hamiz.jpg" alt="Foto Profil Hamiz" class="w-5 h-5 rounded-full ml-1" style="vertical-align: middle;">
+            
+        </div>
+        </div>
+</footer>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laman Informasi Di Sabah</title>
+  <script src="https://cdn.tailwindcss.com"></script> 
+</head>
+
+</body>
+</html>
